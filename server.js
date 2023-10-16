@@ -7,7 +7,7 @@ const userRoutes = require('./routes/userRoutes');
 const employeeRoutes = require('./routes/employeeRoutes');
 
 // Database Connection
-const dbURI = 'mongodb://localhost:27017/comp3123_assigment1';
+const dbURI = 'mongodb://127.0.0.1:27017/comp3123_assignment1';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000, () => {
       console.log("Server is running on port 3000");
